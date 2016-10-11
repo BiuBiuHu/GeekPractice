@@ -1,0 +1,393 @@
+html,body{
+	height: 100%;
+}
+
+div.wrapper{
+	min-width: 810px;
+    height: 100%;
+    min-height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+div.head{
+	margin-top: 19px;
+	text-align: right;
+	position: relative;
+	z-index: 4;
+}
+
+form.search-box{
+	width: 606px;
+	margin: 0 auto;
+	font-size: 0;
+	text-align: center;
+}
+/*页面顶部菜单栏*/
+div.head-list{
+	font-size: 0;
+	overflow: hidden;
+}
+div.head-list a{
+	color: #333;
+	line-height: 24px;
+	font-weight: bold;
+	font-size: 13px;
+	margin-left:20px;
+	text-decoration: underline;
+}
+div.head-list a.simple{
+	font-weight: normal;
+}
+div.head-list a:hover{
+	color: #00c;
+}
+/*更多产品*/
+div.head-list a.more-product{
+	vertical-align: bottom;
+	display: inline-block;
+	color: white;
+	width: 60px;
+	height: 23px;
+	margin-left: 19px;
+	margin-right:12px;
+	line-height: 24px;
+	text-align: center;
+	font-weight: normal;
+	background: #38f;
+	overflow: hidden;
+	text-decoration: none;
+	border-bottom: 2px solid #38f;
+}
+div.body{
+	position: relative;
+	top: 10%;
+	z-index: 2;
+}
+
+
+div.logo-container{
+	text-align: center;
+}
+/*logo尺寸*/
+div.logo-container img{
+	width: 270px;
+	height: 129px;
+}
+
+.input-method{
+	list-style: none;
+	display: inline-block;
+}
+span.s_ipt_wr{
+	width: 500px;
+	height: 38px;
+	vertical-align: top;
+	display: inline-block;
+	position: relative;
+	border-color: #7b7b7b #b6b6b6 #b6b6b6 #7b7b7b;
+	overflow: hidden\9;
+}
+/*搜索框样式*/
+div.search-box-container{
+	position: relative;
+}
+span.search-btn-wrap{
+	height: 38px;
+	display: inline-block;
+}
+span.search-box-wrap{
+	border: 1px solid #ccc;
+	display: inline-block;
+	height: 33px;
+	vertical-align: top;
+}
+
+input.search-box{
+	width: 490px;
+	height: 27px;
+	border: 0;
+	outline: 0;
+	-webkit-appearance:none;
+	font:16px/18px arial;
+	margin: 2px 0 0 7px;
+}
+input.baiduClick{
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+	color: white;
+	font-size: 15px;
+	letter-spacing: 1px;
+	outline: medium;
+	background: #3385ff;
+	border-top: 1px solid #2d78f4;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #2d78f4;
+}
+input.baiduClick:hover{
+	background: #317ef3;
+	border-bottom: 1px solid #2868c8;
+	box-shadow: 1px 1px 1px #ccc;
+}
+input.baiduClick:active{
+	border: none;
+}
+div.search-box{
+	margin-left: 0px;
+}
+ul.input-method{
+	display: inline-block;
+}
+/*底部样式*/
+div.foot{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+    margin: 0 auto;
+    bottom: 23px;
+    overflow: hidden;
+}
+div.foot-container{
+	margin:0 auto;
+	font-size:0;
+	text-align: center;
+}
+div.content,
+div.baidu-nuomi,
+div.baidu-mobile{
+	color: #999;
+	font-size: 0;
+	
+	display: inline-block;
+}
+div.content,
+div.baidu-nuomi{
+	margin-left:20px;
+}
+div.content li{
+	font-size: 12px;
+	list-style: none;
+}
+div.qcodeimg{
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+}
+div.baidu-mobile div.qcodeimg{
+	background: url(../img/zbios.png) 0 0 no-repeat;
+}
+div.baidu-nuomi div.qcodeimg{
+	background: url(../img/nuomi.png) 0 0 no-repeat;
+}
+div.text{
+	width: 52px;
+	height: 46px;
+	color: #999;
+	font-size: 12px;
+	line-height: 23px;
+	display: inline-block;
+	vertical-align: top;
+	margin:8px 0 0 10px;
+}
+div.text .title b{
+	color: #666;
+	font-weight: bold;
+}
+div.text .title p{
+	text-align: left;
+}
+div.content a{
+	color: #999;
+}
+div.content ul li{
+	display: inline-block;
+	line-height: 22px;
+}
+div.content p.note{
+	font-size: 12px;
+	line-height: 22px;
+}
+span.icon{
+	width: 14px;
+	height: 17px;
+	display: inline-block;
+	line-height: 22px;
+	position: relative;
+	top:3px;
+	margin-right: 6px;
+	background: url(../img/icons_0e814c16.png) no-repeat;
+	background-position: -623px -96px;
+}
+span.text{
+	font-size: 12px;
+	line-height: 22px;
+}
+i.gray-icon{
+	width: 14px;
+	height: 17px;
+	display: inline-block;
+	line-height: 22px;
+	position: relative;
+	top:3px;
+	margin-left: 6px;
+	background: url(../img/icons_0e814c16.png) no-repeat;
+	background-position: -600px -96px;
+}
+a.about-zhCN{
+	margin-left: 60px;
+}
+a.about-enUS{
+	margin-left: 63px;
+}
+/*搜索hover弹出框*/
+span.settings{
+	display: inline-block;
+	vertical-align: bottom;
+}
+div.settings-hover{
+	display: none;
+	width: 70px;
+	height: 104px;
+	position: absolute;
+	top: 27px;
+	right: 65px;
+	font-size: 12px;
+	border: 1px solid #d1d1d1;
+	-webkit-box-shadow: 1px 1px 5px #d1d1d1;
+}
+div.settings-hover a{
+	font-weight: normal;
+}
+div.settings-hover a{
+	display: block;
+	text-align: left;
+	margin: 0!important;
+	padding: 0 9px;
+	line-height: 26px;
+	text-decoration: none;
+}
+div.settings-hover a{
+	background: white;
+	color: #333;
+}
+div.settings-hover a:hover{
+	color: white;
+	background: #38f;
+	position: relative;
+}
+/*弹出框顶部箭头*/
+div.settings-hover span.arrow{
+	width: 15px;
+	height: 5px;
+	position: absolute;
+	top: -5px;
+	left: 30px;
+	display: inline-block;
+	background: url("../img/icons_0e814c16.png") no-repeat;
+	background-position: -458px -149px;
+
+}
+/*设置搜索框的照相机图标*/
+span.photo{
+	position: absolute;
+	right: 10px;
+	top: 25%;
+	height: 16px;
+	width: 18px;
+	background: url("../img/camera.png") 0 0;
+}
+span.photo:hover{
+	background: url("../img/camera.png") 0 18px;
+}
+
+/*更多产品弹出框*/
+div.more-product-box{
+	display: none;
+	min-height: 950px;
+	width: 85px;
+	position: absolute;
+	right: 0;
+	top:-25px;
+	background-color: #f9f9f9;
+	z-index: 1;
+}
+div.bdbriimgtitle{
+	color: #333;
+	text-align: center;
+	width: 66px;
+	height: 43px;
+	line-height: 43px;
+	padding-top: 12px;
+	margin: 0 auto;
+	border-bottom: #f0f0f0 1px solid;
+	font-size: 13px;
+	cursor: default;
+}
+
+/*设置文字样式*/
+div.briscrollwrapperContainer a{
+	display: block;
+	text-align: center;
+	width: 66px;
+	height: 76px;
+	margin: 0 auto;
+	border-bottom: #f0f0f0 1px solid;
+	color: #666;
+	font-size: 12px;
+	text-decoration: none;
+	overflow: hidden;
+}
+a.superlink span{
+	width: 36px;
+	height: 36px;
+	display: block;
+	margin: 10px auto 5px;
+	background: url(../img/bdbri_icons_2e35e84b.png) no-repeat;
+	cursor: pointer;
+}
+a.superlink{
+	display: block;
+}
+/*音乐*/
+a.superlink span.item1{
+	width: 40px;
+	background-position: -72px 0;
+}
+/*图片*/
+a.superlink span.item2{
+	background-position: -112px 0;
+}
+/*知道*/
+a.superlink span.item3{
+	background-position: -36px 0;
+}
+/*文库*/
+a.superlink span.item4{
+	background-position: -148px 0;
+}
+/*风云榜*/
+a.superlink span.item5{
+	background-position: -184px 0;
+}
+/*推广*/
+a.superlink span.item6{
+	background-position: -220px 0;
+}
+/*更多产品*/
+div.lastlink{
+	margin-top: 15px;
+	height: 30px;
+	width: 85px;
+	overflow: hidden;
+}
+div.lastlink a.morelink{
+	text-decoration: underline;
+}
+/*输入框获取焦点的效果*/
+span.focueInput{
+	border-left: #4791FF solid 1px;
+	border-bottom: #4791FF solid 1px;
+	border-top: #4791FF solid 1px;
+
+}

@@ -1,0 +1,4 @@
+input.search-box{
+    height: 25px\9;/*针对IE8的hack*/
+    margin-top: 6px\9;
+}

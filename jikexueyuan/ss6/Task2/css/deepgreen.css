@@ -1,0 +1,23 @@
+.width-lg .menus .link.active {
+    background-color: rgb(20, 50, 74);
+    cursor: pointer;
+    color: #fff;
+}
+.width-lg .menus {
+    width: 1190px;
+    height: 38px;
+    border-top: 2px solid rgb(20, 50, 74);
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fcfcfc;
+}
+.g_red, .tc-orange {
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+.s-bg5,
+.g-bg5,
+.s-bg5h:hover,
+.g-bg5h:hover{
+    background: rgba(20, 50, 74 , 0.2);
+}

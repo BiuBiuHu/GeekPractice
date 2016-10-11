@@ -1,0 +1,26 @@
+table{
+	margin:0 auto;
+}
+table,th,td,caption{
+	text-align: center;
+	vertical-align: middle;
+	border-collapse:collapse; 
+	white-space: nowrap;
+}
+th,td{
+	width: 111px;
+	height: 67px;
+	border: 1px solid #000;
+	border-collapse:collapse;
+}
+table{
+	font-weight: bold;
+	font-size: 22px;
+}
+thead:first-child  tr td{
+	border: none;
+}
+caption{
+	height: 67px;
+	line-height: 67px;
+}

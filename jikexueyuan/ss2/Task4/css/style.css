@@ -1,0 +1,161 @@
+/*弹性盒模型水平分栏*/
+div.container1{
+    /*声明弹性盒模型布局*/
+    display: -webkit-flex;
+    display: flex;
+    /*水平分栏*/
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    width: 600px;
+    background: green;
+}
+.first{
+    height: 100px;
+    -webkit-flex: 1;
+    flex: 1;
+    background: orange;
+    -webkit-order:3;
+}
+.second{
+    height: 100px;
+    -webkit-flex: 1;
+    flex: 1;
+    background: darkseagreen;
+    -webkit-order:1;
+}
+.third{
+    height: 200px;
+    -webkit-flex: 1;
+    flex: 1;
+    background: #E3FF7F;
+    -webkit-order:2;
+}
+/*弹性盒模型垂直分栏*/
+div.container2{
+    /*声明弹性盒模型布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+
+    /*设置伸缩盒对象的子元素排列方式为水平排列*/
+    -webkit-box-orient:vertical;
+    -moz-box-orient: vertical;
+    width: 600px;
+    margin-top: 20px;
+    background: green;
+}
+
+.four{
+    height: 100px;
+    /*设置或检索伸缩盒对象的子元素如何分配其剩余空间*/
+    -webkit-box-flex: 1;
+    background: orange;
+    /*flex子项和flex容器中的绝对定位子元素*/
+    -webkit-box-ordinal-group:3;
+}
+.five{
+    height: 100px;
+    -webkit-box-flex: 1;
+    background: darkseagreen;
+    -webkit-box-ordinal-group:1;
+}
+.six{
+    height: 200px;
+    -webkit-box-flex: 1;
+    background: #E3FF7F;
+    -webkit-box-ordinal-group:2;
+}
+.seven,.eight,.nine,.ten{
+    width: 200px;
+    height: 200px;
+    background: orange;
+}
+/*弹性盒子cloumn分栏，排序*/
+div.container3{
+    display: -webkit-flex;
+    display: flex;
+    width: 800px;
+    background: green;
+    -webkit-flex-direction: column;
+    flex-direction:column;
+
+}
+.seven{
+    order: 2;
+}
+.eight{
+    order: 3;
+}
+.nine{
+    order: 1;
+}
+/*居中布局*/
+div.container4{
+    /*声明弹性盒模型布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    /*垂直居中*/
+    -webkit-box-align:center;
+    -moz-box-align: center;
+    -ms-box-align: center;
+    /*水平居中*/
+    -webkit-box-pack:center;
+    -moz-box-pack: center;
+    -ms-box-pack:center;
+    /*设置伸缩盒对象的子元素排列方式为水平排列*/
+    -webkit-box-orient:vertical;
+    width: 800px;
+    height: 300px;
+    margin-top: 20px;
+    background: green;
+}
+
+
+
+/******分割线*********/
+/*正常盒模型与怪异盒模型对比*/
+.xiezi1{
+    width: 100px;
+    height: 100px;
+    background: orangered;
+}
+/*盒模型的大小包括content，padding，border，先做content*/
+/*盒模型的大小会以内容优先自动扩展。内部子元素超过父元素给定的大小，会将父元素撑大。*/
+.xiehe1{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 5px solid deepskyblue;
+    margin: 100px;
+    box-sizing: content-box;
+    background: darkseagreen;
+}
+.xiezi2{
+    width: 100px;
+    height: 100px;
+    background: orangered;
+}
+/*先做盒，然后添加border, padding，最后做content*/
+/*保证盒子优先，先做盒子，内容放不下再说，手机上用的比较多*/
+/*更通俗的说，如果父元素的盒模型确定，子元素是无法撑开父元素的盒模型的*/
+.xiehe2{
+    width: 120px;
+    height: 120px;
+    margin: 100px;
+    padding: 10px;
+    border: 5px solid deepskyblue;
+    box-sizing: border-box;
+    background: darkseagreen;
+}
+
+.xiehe3{
+    width: 130px;
+    height: 130px;
+    margin: 100px;
+    padding: 10px;
+    border: 5px solid deepskyblue;
+    box-sizing: border-box;
+    background: darkseagreen;
+}
+

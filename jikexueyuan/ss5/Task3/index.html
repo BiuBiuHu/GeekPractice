@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>求数组的中变量出现次数</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <p>老师，这个问题我用console输出了结果。</p>
+    <p>有个问题：</p>
+    <pre>
+        var array = ["a","x","b","d","m","a","k","m","p","j","a"];
+        var object = {};
+        for(var a in array){
+            var b = array[a];
+            if(object[b] === undefined){
+                object[b] = 1;
+            }else{
+                object[array[a]] = parseInt(object[array[a]],10) +1;
+            }
+        }
+    </pre>
+    <hr>
+    <p class="note">以下为运行结果截图</p>
+    <img src="img/1.png">
+    <hr>
+    <p class="widget">我是分割线</p>
+    <p class="happy">祝各位老师，国庆快乐。</p>
+    <hr>
+    <p>当我用下面的方式获取对象的属性时，调用失败了，请老师指点。</p>
+    <pre>
+        var array = ["a","x","b","d","m","a","k","m","p","j","a"];
+        var object = {};
+        for(var a in array){
+            var b = array[a];
+            if(object.b === undefined){
+                object.b = 1;
+            }else{
+                object[array[a]] = parseInt(object[array[a]],10) +1;
+            }
+        }
+    </pre>
+    <hr>
+    <p class="note">以下为运行结果截图</p>
+    <img src="img/2.png">
+
+</body>
+<script src="js/script.js"></script>
+</html>

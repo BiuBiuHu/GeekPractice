@@ -1,0 +1,114 @@
+/*页面背景颜色*/
+body{
+    font-size: 12px;
+    background: url("../img/beijing.gif");
+}
+div.container{
+    width: 710px;
+    margin: 10px auto 20px auto;
+    background: #ffffff;
+    border-radius: 28px;
+}
+div.head{
+    position: relative;
+    height: 82px;
+}
+div.head img{
+    margin-left: 29px;
+    margin-top: 3px;
+}
+/*页面右上角的三个按钮*/
+div.tips{
+    display: inline-block;
+    position: absolute;
+    right: 29px;
+    top: 68px;
+}
+div.tips a{
+    color: rgb(255, 0, 153);
+    margin-left: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*设置表格通用样式*/
+table,tr,th,td{
+    border: 1px solid #888;
+    vertical-align: middle;
+    line-height: 18px;
+    border-collapse: collapse;
+}
+table{
+    margin: 0 auto;
+    border: none;
+}
+table thead tr th{
+    height: 60px;
+    vertical-align: middle;
+    font-size: 18px;
+    border: none;
+}
+table thead tr,
+table tfoot tr,
+table tfoot tr td{
+    border: none;
+}
+/*按钮样式*/
+button{
+    width: 86px;
+    text-align: center;
+}
+input.text{
+    width: 243px;
+    margin: 2px;
+}
+/*下拉框样式*/
+select{
+    margin: 2px;
+}
+/*第一列的样式*/
+tr td:first-child{
+    text-align: right;
+}
+tfoot tr td:first-child{
+    text-align: center;
+}
+tr.buttom td{
+    height: 85px;
+    text-align: center;
+}
+.red{
+    color: #ff0000;
+}
+.blue{
+    color: #0000ff;
+}
+/*住址用到的样式*/
+.location{
+    font-size: 12px;
+    font-weight: bold;
+}
+/*注册信息说明栏背景*/
+tr.first td{
+    height: 58px;
+    text-align: center;
+    background: url("../img/beijin1.gif");
+}
+/*标题栏信息*/
+tr.title{
+    background: #EEEEEE;
+}
+td{
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #333333;
+}
+td h4{
+    color: rgb(0, 51, 153);
+    padding-left: 13px;
+    line-height: 23px;
+    text-align: left;
+}
+textarea{
+    margin: 2px;
+}

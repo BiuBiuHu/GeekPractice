@@ -1,0 +1,12 @@
+ /*规定文章容器的样式*/
+div.container{
+     width: 1024px;
+     margin: 0 auto;
+     text-align: center;
+ }
+ /*规定当个小模块（小知识点）的样式*/
+ div.content{
+     width: 100%;;
+     text-align: left;
+     margin-top: 40px;
+ }

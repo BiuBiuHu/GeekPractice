@@ -1,0 +1,14 @@
+img{
+    border: 2px dotted ;
+}
+
+p.note{
+    color: #00bfff;
+}
+
+p.widget{
+    font-weight: 700;
+}
+p.happy{
+    color: #CC0033;
+}

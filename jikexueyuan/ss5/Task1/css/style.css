@@ -1,0 +1,17 @@
+/*主题样式*/
+body{
+    padding-top: 15%;
+    padding-bottom: 40px;
+    background-color: #eee;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+/*按钮样式*/
+button{
+    width: 15%;
+    vertical-align: top;
+    display: inline-block;
+}
+input#value{
+    width: 80%;
+    display: inline-block;
+}

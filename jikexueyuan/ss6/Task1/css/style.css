@@ -1,0 +1,58 @@
+/*计算器背景*/
+div.container{
+    width: 300px;
+    height: 484px;
+    background: #202020;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/*显示屏*/
+textarea{
+    margin: 0;
+    padding: 0;
+    width: 298px;
+    height: 88px;
+    border-color: #202020;
+    resize: none;
+    font-size: 76px;
+    background: #202020;
+    color: #fff;
+    text-align: end;
+    border-color: #202020;
+    overflow: hidden;
+}
+textarea:focus{
+    outline: none;
+}
+/*按钮样式*/
+button{
+    float: left;
+    width: 25%;
+    height: 75px;
+    background: #D6D5DA;
+}
+/*数字按钮样式*/
+button.zero{
+    width: 50%;
+}
+/*操作按钮样式*/
+div.opre>button{
+    background: #F58811;
+}
+div.opre>button.gray{
+    background: #C7C8CA;
+}
+div.operation-vertical{
+    text-align: right;
+}
+div.operation-vertical>div{
+    display: inline-block;
+    color: #ffffff;
+    width: 100%;
+    height: 20px;
+}

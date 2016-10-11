@@ -1,0 +1,100 @@
+html,body{
+    height: 100%;
+}
+div.cube-container{
+    height: 100%;
+    /*透视效果代码*/
+    /*-webkit-perspective: 400px;*/
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    transform-style: preserve-3d;
+    transform-origin: 50px 50px 50px;
+    -webkit-animation: 6s cube linear infinite;
+}
+div.box{
+    width: 150px;
+    height: 150px;
+    font-size: 0;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    transform-style: preserve-3d;
+}
+div.smallBox{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+div.a{
+    opacity: 0.8;
+    background: deepskyblue;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+div.a .smallBox{
+    background: green;
+}
+div.b{
+    opacity: 0.8;
+    background: #660099;
+    transform:  translateX(-150px) translateY(-150px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+    transform-origin: bottom;
+}
+div.b div.smallBox{
+    background: #ffffff;
+}
+
+div.c{
+    opacity: 0.8;
+    background: #66CCCC;
+    transform: translateX(-150px)  translateY(0) rotateX(0deg) rotateY(-90deg) rotateZ(0deg);
+    transform-origin: left;
+}
+div.c div.smallBox{
+    background: red;
+}
+div.d{
+    opacity: 0.8;
+    background: #660000;
+    transform: translateX(-450px)  translateY(150px) rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+    transform-origin: top;
+}
+div.d div.smallBox{
+    background: blue;
+}
+div.e{
+    opacity: 0.8;
+    background: #CC3366;
+    transform: translateX(-750px)  translateY(0) rotateX(0deg) rotateY(90deg) rotateZ(0deg);
+    transform-origin: right;
+}
+div.e div.smallBox{
+    background: dodgerblue;
+}
+div.f{
+    opacity: 0.8;
+    background: #CC3399;
+    transform: translateX(-750px)  translateY(0) translateZ(150px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+div.f div.smallBox{
+    background: #E3FF7F;
+}
+
+/*动画*/
+@-webkit-keyframes cube {
+    0%{
+        -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    50%{
+        -webkit-transform: rotateX(20deg) rotateY(133deg) rotateZ(16deg);
+    }
+
+    100%{
+        -webkit-transform:  rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+    }
+ }
+

@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div.box{
+    width: 100px;
+    height: 100px;
+}
+div.center{
+    position: absolute;
+    margin:  auto;
+    top: 0;
+    right: 0;
+    bottom:0;
+    left: 0;
+
+    background: url("../img/html5_96.png") no-repeat center;
+    background-size: 24px 24px;
+
+    box-shadow:
+     0 0 10px -10px #fff inset,
+     -10px 0 40px -10px #2b2b2b inset,
+     0 -10px 15px -5px #b2b2b2  inset,
+     10px 0 20px -10px #2b2b2b  inset;
+}
+div.top{
+    position: absolute;
+    top: -105px;
+    left: 0;
+    background: #2F6A91;
+    box-shadow:
+    0 0 5px -5px #b2b2b2,
+    10px 0 10px -5px #b2b2b2,
+    0 10px 15px -5px #b2b2b2,
+    -10px 0 10px -5px #b2b2b2;
+}
+div.right{
+    position: absolute;
+    top: 0;
+    left: 105px;
+    background: #329E35;
+    box-shadow:
+    0 -10px 10px -5px #b2b2b2,
+    10px 0 10px -10px #b2b2b2,
+    0 10px 10px -5px #b2b2b2,
+    -10px 0 10px -5px #b2b2b2;
+
+
+}
+div.bottom{
+    position: absolute;
+    top: 105px;
+    left: 0;
+    background: #8B1C2B;
+    box-shadow:
+    0 -10px 10px -5px #b2b2b2,
+    10px 0 10px -5px #b2b2b2,
+    0 5px 15px -10px #b2b2b2,
+    -10px 0 10px -5px #b2b2b2;
+}
+div.left{
+    position: absolute;
+    left: -105px;
+    top: 0;
+    background: #532771;
+    box-shadow:
+    0 -10px 10px -5px #b2b2b2,
+    10px 0 10px -5px #b2b2b2,
+    0 10px 10px -5px #b2b2b2,
+    -10px 0 10px -10px #b2b2b2;
+
+
+}
+

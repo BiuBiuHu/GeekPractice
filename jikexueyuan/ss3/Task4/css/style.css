@@ -1,0 +1,229 @@
+body{
+    overflow: hidden;
+}
+/*画布背景*/
+div.container{
+    width: 300px;
+    height: 300px;
+    background: darkgray;
+    overflow: hidden;
+    border: 2px solid #000;
+    margin: 200px auto;
+}
+
+div.head{
+    width: 150px;
+    height: 150px;
+    background: whitesmoke;
+    margin: 40px auto 0;
+    border: 2px solid #000;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    z-index: 9;
+    position: relative;
+}
+
+div.eye{
+    width: 58px;
+    height: 38px;
+    border-radius: 30px / 20px;
+    border: 2px solid #000;
+    background: #EB9A17;
+    -webkit-animation: eye 2s ease-out infinite;
+    -moz-animation: eye 2s ease-out infinite;
+    animation: eye 2s ease-out infinite;
+}
+div.left{
+    transform: rotate(19deg) translatex(25px) translatey(43px);
+}
+
+div.right{
+    transform: rotate(-14deg) translatex(76px) translatey(29px);
+}
+
+div.top{
+    width: 0;
+    height: 0;
+    float: left;
+    background: transparent;
+    border-top: 55px solid #ccc;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    transform: translatex(71px) rotate(5deg);
+    position: relative;
+}
+
+div.box{
+    width:9px;
+    height: 0;
+    border-width: 0 6px 14px 7px;
+    border-style: none solid solid;
+    border-color: transparent transparent #ccc;
+    /* border: 16px solid #ccc; */
+    transform: translatey(-68px) translatex(-10px);
+}
+div.body{
+    width: 92px;
+    height: 71px;
+    margin: 0 auto;
+    background: #f5f5f5;
+    transform: translateY(-10px);
+    border: 2px solid #000;
+    border-bottom: none;
+}
+div.body-mask{
+    position: relative;
+    width: 92px;
+    height: 20px;
+}
+div.arm{
+    width: 70px;
+    height: 40px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 20px;
+    background: whitesmoke;
+    transform: translateX(-20px) translateY(-5px) rotate(10deg);
+    z-index: 5;
+    position: relative;
+}
+/*背部颜色*/
+div.bank{
+    width: 11px;
+    height: 49px;
+    border: 2px solid #000;
+    background: #FE0000;
+    transform: translateX(80px) translateY(-56px) skew(30deg) rotate(24deg);
+}
+
+div.ear{
+    width: 10px;
+    height: 40px;
+    border: 2px solid #000;
+    background: whitesmoke;
+    position: relative;
+    z-index: 5;
+}
+
+div.ear-left{
+    transform: translateX(-11px) translateY(-24px) skew(30deg) rotate(20deg);
+    border-radius: 58px;
+}
+
+div.ear-right{
+    transform:translateX(146px) translateY(-66px) skew(-35deg) rotate(-22deg);
+    border-radius: 48px;
+}
+div.hand{
+    width: 30px;
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid #000;
+    border-top: none;
+    transform:translateX(88px) translateY(-29px) skew(0deg) rotate(-4deg);
+    position: absolute;
+    z-index: 20;
+    background: whitesmoke;
+}
+/*手指*/
+div.fingure{
+    width: 15px;
+    height: 25px;
+    border: 1px solid #000;
+    background: whitesmoke;
+    border-radius: 20px;
+    position: relative;
+    z-index: 99;
+}
+div.fingure-left{
+    transform: translateX(0px) translateY(-14px) skew(0deg) rotate(-19deg);
+}
+div.fingure-right{
+    transform: translateX(10px) translateY(-43px) skew(0deg) rotate(5deg);
+}
+/*裤子*/
+div.pants{
+    width: 102px;
+    height: 20px;
+    background: #f00;
+    border: 3px solid #000;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    transform: translateX(103px) translateY(-62px) skew(0deg) rotate(0deg);
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 32px;
+    position: relative;
+    z-index: 3;
+}
+div.pants-left{
+    width: 20px;
+    height: 40px;
+    background: #f00;
+    border: 2px solid #000;
+    transform:translateX(103px) translateY(-83px) skew(0deg) rotate(-57deg);
+    border-right: none;
+    position: relative;
+    z-index: 4;
+}
+
+div.pants-right{
+    width: 20px;
+    height: 40px;
+    background: #f00;
+    border: 2px solid #000;
+    transform:translateX(180px) translateY(-127px) skew(0deg) rotate(-119deg);
+    border-right: none;
+    position: relative;
+    z-index: 4;
+}
+div.pants-middle{
+    width: 39px;
+    height: 20px;
+    background: #f00;
+    border-bottom: 2px solid #000;
+    transform:translateX(133px) translateY(-162px) skew(0deg) rotate(1deg);
+}
+/*裤子下边部分*/
+div.pants-down{
+    width: 60px;
+    height: 28px;
+    border: 2px solid #000;
+    border-bottom-right-radius: 10px;
+    background: white;
+    transform: translateX(128px) translateY(-165px) skew(47deg) rotate(-26deg);
+}
+div.foot{
+    width: 40px;
+    height: 40px;
+    border-radius: 22px;
+    background: #f5f5f5;
+    border: 2px solid #000;
+    z-index: 2;
+}
+div.foot-left{
+    transform:translateX(85px) translateY(-183px) skew(169deg) rotate(98deg);
+}
+
+div.foot-right{
+
+    transform: translateX(177px) translateY(-223px) skew(188deg) rotate(205deg);
+}
+
+/*眼睛动画*/
+@-webkit-keyframes eye {
+        0%{ background: yellow; box-shadow: 0 0 24px yellow;}
+        50%{ background: orange;box-shadow: 0 0 34px orange; }
+        100%{ background: red; box-shadow: 0 0 24px red;}
+ }
+
+@-moz-keyframes eye {
+    0%{ background: yellow; box-shadow: 0 0 24px yellow;}
+    50%{ background: orange;box-shadow: 0 0 34px orange; }
+    100%{ background: red; box-shadow: 0 0 24px red;}
+ }

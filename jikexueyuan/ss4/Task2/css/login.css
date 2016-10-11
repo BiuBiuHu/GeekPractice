@@ -1,0 +1,21 @@
+html,body{
+    height: 100%;
+}
+div.container,div.container-fluid,div.row{
+    height: 100%;
+}
+div.col-md-4{
+    margin-top: 20%;
+}
+.form-signin{
+	margin: 0 auto;
+	max-width: 360px;
+	box-sizing:border-box;
+}
+.btn-lg{
+	width: 100%;
+}
+.form-horizontal .form-group{
+	margin-left: 0;
+	margin-right: 0;
+}

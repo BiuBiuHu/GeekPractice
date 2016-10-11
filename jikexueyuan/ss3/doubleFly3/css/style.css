@@ -1,0 +1,48 @@
+html,body{
+    height: 100%;
+}
+body{
+    min-width: 800px;
+    color: #ffffff;
+}
+div.header{
+    height: 100px;
+    background: cornflowerblue;
+}
+/*正文取消高度，添加overflow:hidden，可以由内容将页面撑开*/
+div.article{
+    background: darkcyan;
+    overflow: hidden;
+}
+div.footer{
+    height: 200px;
+    background: darkgrey;
+}
+/*以下是双飞翼布局的内容*/
+div.article div.left{
+    float: left;
+    width: 150px;
+    margin-left: -100%;
+    background: darkred;
+}
+div.article div.right{
+    float: left;
+    width: 150px;
+    margin-left: -150px;
+    background: yellowgreen;
+}
+div.article div.middle{
+    width: 100%;
+    float: left;
+    background: green;
+}
+/*留出left、right的距离*/
+div.inner{
+    margin: 0 150px;
+
+}
+/*等高处理*/
+.equalHeight{
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}

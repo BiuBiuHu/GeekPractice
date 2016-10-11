@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>弹性盒模型</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"
+</head>
+<body>
+    <h1>弹性盒模型</h1>
+    <h2>弹性盒子水平分栏、排序</h2>
+    <p>水平分栏，垂直分栏需要借助旧的弹性盒模型的box-orient实现</p>
+    <p>但是声明盒模型时还是声明成新的盒模型</p>
+    <div class="container1">
+        <div class="first">第一个</div>
+        <div class="second">第二个</div>
+        <div class="third">第三个</div>
+    </div>
+    <hr>
+    <h2>弹性盒子垂直分栏、排序</h2>
+    <p>实话说，我认为视频中老师讲这部分内容时，条理不清晰，逻辑不连贯</p>
+    <div class="container2">
+        <div class="four">第四个</div>
+        <div class="five">第五个</div>
+        <div class="six">第六个</div>
+    </div>
+    <hr>
+    <h2>弹性盒子cloumn分栏，排序</h2>
+    <p>-webkit-flex-direction: column;</p>
+    <p>排序时，数值小的会把数值大的盖住</p>
+    <div class="container3">
+        <div class="seven">第七个</div>
+        <div class="eight">第八个</div>
+        <div class="nine">第九个</div>
+    </div>
+    <hr>
+    <h2>旧版弹性盒子居中布局</h2>
+    <p>/*垂直居中*/</p>
+    <p>-webkit-box-align:center;</p>
+    <p>-moz-box-align: center;</p>
+    <p>-ms-box-align: center;</p>
+    <p> /*水平居中*/</p>
+    <p> -webkit-box-pack:center;</p>
+    <p> -moz-box-pack: center;</p>
+    <p> -ms-box-pack:center;</p>
+    <div class="container4">
+        <div class="ten">第七个</div>
+    </div>
+    <hr>
+    <h1>正常盒模型与怪异盒模型对比</h1>
+    <hr>
+    <h2>正常盒模型</h2>
+    <div class="xiehe1">
+        <div class="xiezi1">
+            盒模型
+        </div>
+    </div>
+    <p>盒模型的大小包括content，padding，border，先做content。
+        盒模型的大小会以内容优先自动扩展。内部子元素超过父元素给定的大小，会将父元素撑大。</p>
+    <hr>
+    <h2>怪异盒模型1</h2>
+    <div class="xiehe2">
+        <div class="xiezi2">
+            怪异盒模型
+        </div>
+    </div>
+    <p>
+       先做盒，然后添加border, padding，最后做content。
+       保证盒模型优先，先做盒模型，内容放不下再说，手机上用的比较多。
+       更通俗的说，如果父元素的盒模型确定，子元素是无法撑开父元素的盒模型的，只能在盒模型剩余的空间展示。<br>
+       <br>
+        如果将父元素盒模型的宽高，改为(子元素)width + (父元素)padding + (父元素)border的尺寸 = 130px。
+        那么将得到的结果与正常盒模型相同。如怪异盒模型2所示。
+    </p>
+    <hr>
+    <h2>怪异盒模型2</h2>
+    <div class="xiehe3">
+        <div class="xiezi2">
+            怪异盒模型
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.width-lg .menus {
+    border-top: 2px solid rgb(225, 45, 109);
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fcfcfc;
+}
+.g_red, .tc-orange {
+    color: rgb(10, 167, 112);
+}
+
+.s-bg5,
+.g-bg5,
+.s-bg5h:hover,
+.g-bg5h:hover{
+    background: rgba(225, 45, 109 , 0.2);
+}
+
+.width-lg .menus .link.active {
+    background-color: rgb(225, 45, 109);
+    cursor: pointer;
+    color: #fff;
+}

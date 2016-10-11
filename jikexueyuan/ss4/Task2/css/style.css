@@ -1,0 +1,68 @@
+
+html,body{
+    height: 100%;
+}
+/*设置标题属性*/
+nav{
+    height: 75px;
+    background: #46505C;
+}
+/*设置侧边栏*/
+div.left{
+    width: 16%;
+    min-width: 75px;
+    padding-bottom: 999px;
+    margin-bottom: -999px;
+    background: #656F7B;
+    overflow-y: auto;
+}
+div.title{
+    height: 36px;
+    line-height: 36px;
+    background: yellowgreen;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+div.userInfo{
+    float: right;
+}
+div.logo{
+
+    height: 75px;
+    background: url("../img/logo.png") no-repeat center;
+    background-size: 53% 58%;
+}
+
+.panel > .list-group,
+.panel > .panel-collapse > .list-group{
+    padding: 0;
+}
+.panel-title > a{
+    text-decoration: none;
+}
+.list-group-item{
+    padding-left: 30px;
+}
+/*设置右上角按钮*/
+div.btn-group{
+    margin-top: 20px;
+    margin-right: 20px;
+    background: #333;
+}
+/*设置内容区域*/
+div.row  div.manger-content{
+    min-height: 770px;
+}
+/*设置路径样式*/
+.pathTips{
+    padding-right: 0;
+}
+/*右上角*/
+button.navbar-toggle{
+    background: #ccc;
+    margin-top: 19px;
+}
+
+button> span.icon-bar{
+    background: #563d7c;
+}
