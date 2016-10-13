@@ -1,0 +1,24 @@
+html,body{
+    width: 100%;
+}
+/*页面容器*/
+div.container{
+    width: 100%;
+}
+/*图片容器*/
+div.box{
+    float: left;
+    margin: auto 2px;
+}
+/*图片边框*/
+div.content{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #888888;
+}
+/*图片样式*/
+div.box img{
+    width: 250px;
+    height: auto;
+}
