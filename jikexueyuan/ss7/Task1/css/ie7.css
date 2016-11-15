@@ -1,0 +1,35 @@
+/*恢复对inline-block的支持*/
+div.content,div.baidu-mobile,div.baidu-nuomi,
+div.qcodeimg,div.text,div.content ul li{
+    display: inline-block;
+    *zoom:1;
+    *display:inline;
+}
+/*输入框垂直居中*/
+input.search-box{
+    height: 24px;/*针对IE8的hack*/
+    margin-top: 5px;
+}
+
+span.settings{
+    vertical-align: top;
+    margin-top: -4px;
+}
+
+div.head-list a{
+    vertical-align: top;
+}
+/*使得a标签正常占满line-height的高度*/
+div.settings-hover a:hover{
+    *zoom:1;
+}
+/*更多产品，兼容处理*/
+div.head-list a.more-product {
+    vertical-align: bottom;
+    position: relative;
+    top: -5px;
+    *zoom:1;
+}
+div.settings-hover{
+    right: 70px;
+}

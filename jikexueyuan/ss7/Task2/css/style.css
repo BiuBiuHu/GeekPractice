@@ -1,0 +1,1538 @@
+/*身体背景颜色*/
+body{
+    background: #f5f5f5;
+}
+/*头部*/
+div#header{
+    height: 60px;
+    margin: 0 auto;
+    border-bottom: 1px solid #cccccc;
+    background: #fff;
+}
+/*头部内容*/
+div.header{
+    width: 1000px;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+}
+
+div.header li:hover{
+    color:#35b558;
+    cursor: pointer;
+}
+a.logo{
+    width: 109px;
+    display: inline-block;
+    margin-right: 60px;
+}
+div#header .logo img{
+    width: 109px;
+    margin-top: 10px;
+}
+div#header nav{
+    display: inline-block;
+    height: 60px;
+    vertical-align: top;
+}
+div#header nav ul{
+    vertical-align: top;
+    margin: 0 0;
+    line-height: 60px;
+    padding-left: 0;
+}
+div#header nav li{
+    display: inline-block;
+    font-size: 14px;
+    height: 60px;
+    margin-right: 50px;
+    position: relative;
+}
+#header a{
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+#header nav a{
+    color: #333;
+}
+.arrow-icon{
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1;
+    display: inline-block;
+    -webkit-transform: rotate(-135deg);
+    transform-origin: 4px 4px;
+}
+#header nav li i.arrow-icon{
+    margin-bottom: 2px;
+}
+#header nav li:hover>a{
+    color: #35B558;
+}
+#header nav li:hover i.arrow-icon{
+    margin-bottom: -2px;
+    border-top: 1px solid #35B558;
+    border-left: 1px solid #35B558;
+    animation: rotate 1s ease normal;
+    -webkit-transform: rotate(45deg);
+    -webkit-animation: rotate 1s ease normal;
+}
+@keyframes rotate {
+    100% {
+        transform:  rotate(360deg);
+        -webkit-transform:  rotate(360deg);
+    }
+}
+#header nav .submenu{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    z-index: 1000;
+    top: 60px;
+    left: 0;
+    background: #fff;
+    font-size: 12px;
+    color: #666;
+    width: 280px;
+}
+
+
+/*下拉列表出现及动画*/
+#header nav li:hover .submenu{
+    display: block;
+    opacity: 1;
+    animation: myfirst 0.8s ease normal;
+    -moz-animation: myfirst 0.8s ease normal;
+    -webkit-animation: myfirst 0.8s ease normal;
+}
+
+/*列表下拉动画*/
+@keyframes myfirst {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes myfirst
+    /* Firefox */
+
+{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes myfirst
+    /* Safari and Chrome */
+
+{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes myfirst
+    /* Opera */
+
+{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#header nav a:hover{
+    color: #35B558;
+}
+/*标题下拉列表*/
+.vip-lesson i,
+.school-list i{
+    background: url("../img/allicon.png") 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px !important;
+}
+.vip-lesson .web-icon,
+.school-list .web-icon{
+    background-position: -15px -27px;
+}
+
+.school-list i.python-icon,
+.school-list i.go-icon,
+.school-list i.php-icon,
+.school-list i.java-icon,
+.school-list i.ios-icon,
+.school-list i.android-icon{
+    background: url("../img/allicon3.png") 0 0 no-repeat;
+    background-size: 16px 148px;
+}
+.school-list i.python-icon{
+    background-position: -2px -2px;
+}
+.school-list i.go-icon{
+    background-position: -2px -38px;
+}
+.school-list i.ios-icon{
+    background-position: -2px -82px;
+}
+section.jkBanner{
+    position: relative;
+}
+#header nav .submenu h3{
+    margin: 10px 0;
+    padding: 0 15px;
+    background: #fafafa;
+    height: 28px;
+    line-height: 28px;
+    font-weight: 300;
+}
+#header nav .submenu a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+div#header nav li:nth-child(2):hover .submenu{
+    display: block;
+    opacity: 1;
+}
+/*搜索框*/
+#header .searchbox{
+    display: inline-block;
+    transform: scale(0.1,1);
+    opacity: 0;
+    height: 59px;
+    line-height: 59px;
+    width: 850px;
+    background: #fff;
+    position: absolute;
+    z-index: 11000;
+    top: 0;
+    right: 0;
+}
+#header .searchbox .close-icon {
+    width: 15px;
+    height: 15px;
+    margin-top: 22px;
+    cursor: pointer;
+    background: url("../img/close-icon.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1200;
+}
+#header .searchbox input {
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    font-size: 12px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+#header .searchbox .tagbox {
+    width: 300px;
+    text-align: right;
+    display: inline;
+    margin-right: 50px;
+    float: right;
+}
+
+#header .searchbox .tagbox a {
+    font-size: 12px;
+    color: #808080;
+    background: #f5f5f5;
+    padding: 3px 5px;
+    margin-left: 10px;
+}
+
+#web_search_header {
+    border: none;
+    outline: none;
+}
+#header .search-icon {
+    background: url("../img/search-icon.png") 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position: 0, 0;
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+}
+
+
+.scale {
+    transform-origin: right center;
+    -moz-transform-origin: right center;
+    display: block!important;
+    transform: scale(1, 1) !important;
+    opacity: 1!important;
+    animation: scalerun 0.8s ease normal;
+    -moz-animation: scalerun 2s line normal;
+    -webkit-animation: scalerun 0.8s ease normal;
+}
+
+@keyframes scalerun {
+    0% {
+        opacity: 0;
+        transform: scale(0.1, 1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+@-moz-keyframes scalerun
+    /* Firefox */
+
+{
+    0% {
+        opacity: 0;
+        transform: scale(0.1, 1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+@-webkit-keyframes scalerun
+    /* Safari and Chrome */
+
+{
+    0% {
+        opacity: 0;
+        transform: scale(0.1, 1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+@-o-keyframes scalerun
+    /* Opera */
+
+{
+    0% {
+        opacity: 0;
+        transform: scale(0.1, 1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+/*vip lesson*/
+#header nav .vip-lesson{
+    padding: 10px 0;
+}
+#header nav .vip-lesson a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+#header nav .vip-lesson a span{
+    color: #bbb;
+    float: right;
+}
+#header nav .vip-lesson a:hover{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background: #fafafa;
+    color: #35B558;
+}
+#header nav .vip-lesson a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+.vip-lesson i{
+    vertical-align: middle;
+}
+.vip-lesson .kck-icon,
+.school-list .kck-icon{
+    background-position: 0 -13px;
+}
+
+.vip-lesson .zyljt-icon,
+.school-list .zyljt-icon{
+    background-position: -45px 0;
+}
+.vip-lesson .zstxt-icon,
+.school-list .zstxt-icon{
+    background-position: -30px -13px;
+}
+.vip-lesson .xlkc-icon,
+.school-list .xlkc-icon{
+    background: url("../img/xlkc2.png") 0 0 no-repeat;
+    background-position:  0 0;
+    background-size: 12px 12px;
+}
+.vip-lesson .kcbq-icon,
+.school-list .kcbq-icon{
+    background-position: -15px -13px;
+}
+.vip-lesson .vip-icon,
+.school-list .vip-icon{
+    background-position: -16px 0;
+}
+
+/*极客社区*/
+.vip-lesson .jswd-icon,
+.school-list .jswd-icon{
+    background-position:  0 -27px;
+}
+.vip-lesson .wiki-icon,
+.school-list .wiki-icon{
+    background-position: -29px -27px;
+}
+.vip-lesson .sq-icon,
+.school-list .sq-icon{
+    background-position: 0 2px;
+}
+.vip-lesson .zygx-icon,
+.school-list .zygx-icon{
+    background-position: -30px 0;
+}
+/*顶部右侧栏*/
+#header .icon-box{
+    float: right;
+    text-align: right;
+    width: 200px;
+    margin-right: 10px;
+    height: 60px;
+}
+#header .search-icon{
+    background: url("../img/search-icon.png") 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position:  0, 0;
+
+}
+#header .icon-box span{
+    height: 60px;
+    width: 17px;
+    display: inline-block;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+#header .icon-box .app-icon{
+    position: relative;
+    background: url("../img/app-icon.png") 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position: 0;
+}
+
+#header .icon-box .login-icon{
+    background: url("../img/login-icon.png") 0 0 no-repeat;
+    background-size: 17px;
+    background-position: 0;
+}
+.loginlist .submenu{
+    display: none;
+    opacity: 0;
+    background: #fff;
+    position: absolute;
+    width: 120px;
+    z-index: 1200;
+    top: 58px;
+    right: 10px;
+    border-top: 1px solid #ececec;
+}
+#header .icon-box .app-icon .submenu{
+    padding: 0;
+    right: -50px;
+}
+.loginlist:hover .submenu{
+    display: block;
+    opacity: 1;
+    -webkit-animation: listshow 0.8s ease normal;
+}
+#header .icon-box .app-icon .submenu .top-icon{
+    right: 50px;
+}
+.loginlist .submenu .top-icon{
+    position: absolute;
+    top: -8px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    -webkit-transform: rotate(45deg);
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    display: inline-block;
+    background: #fff;
+}
+.loginlist .submenu dd{
+    text-align: left;
+    font-size: 12px;
+    line-height: 35px;
+    vertical-align: middle;
+    margin: 0;
+    padding-left: 10px;
+}
+.loginlist .submenu dd a.reg-btn,
+.loginlist .submenu dd a.login-btn{
+    width: 45%;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    text-align: center;
+}
+.loginlist .submenu dd a{
+    color: #666;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+}
+/*用户中心下拉列*/
+#header .loginlist dd i,
+#uservip-icon{
+    background:url("../img/allicon2.png") 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    display: inline-block;
+}
+#header .loginlist .xxzx-icon{
+    background-position: -16px -15px;
+}
+#header .loginlist .xxtz-icon{
+    background-position: -16px -30px;
+}
+
+#header .loginlist .grzy-icon{
+    background-position: -45px -1px;
+}
+
+#header .loginlist .zhsz-icon{
+    background-position: -30px -1px;
+}
+/*视屏容器*/
+div.videoContainer{
+    width: 100%;
+    height: 525px;
+    overflow: hidden;
+    position: relative;
+}
+.jkBanner .videoContainer .index_video{
+    position: relative;
+    left: 50%;
+    margin-left: -960px;
+}
+#header .icon-box .app-icon .submenu img{
+    width: 100%;
+}
+div.video_mask{
+    width: 100%;
+    height: 525px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.6);
+}
+
+section.jkBanner .bannerInfo{
+    display: block;
+    width: 100%;
+    height: 525px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+div.bannerInfo h1,
+div.bannerInfo p{
+    color: white;
+}
+.jkBanner .bannerInfo>h1{
+    font-size: 35px;
+    color: #fff;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    height: 45px;
+}
+
+.jkBanner .bannerInfo>p{
+    font-size: 13px;
+    color: #fafafa;
+    line-height: 21px;
+    height: 21px;
+}
+.jkBanner .bannerDownload{
+    height: 44px;
+    margin-top: 48px;
+}
+.jkBanner .bannerDownload>a{
+    display: inline-block;
+    height: 44px;
+    width: 141px;
+}
+
+.jkBanner .bannerDownload .androidDownload{
+    background: url("../img/anddown_92313c1.png") no-repeat center;
+    background-size: 141px 44px;
+    margin-right: 20px;
+}
+.jkBanner .bannerDownload .androidDownload:hover{
+    background: url("../img/anddownhover_6bed6d5.png") no-repeat center;
+    background-size: 141px 44px;
+}
+.jkBanner .bannerDownload .iosDownload{
+    background: url("../img/iosdown_0813309.png") no-repeat center;
+    background-size: 141px 44px;
+}
+.jkBanner .bannerDownload .iosDownload:hover{
+    background: url("../img/iosdownhover_43e4f99.png") no-repeat center;
+    background-size: 141px 44px;
+}
+
+.jkBanner .bannerInfo>span{
+    margin-top: 45px;
+    font-size: 12px;
+    color: #fafafa;
+    display: block;
+    height: 18px;
+}
+
+.jkBanner .bannerStatus{
+    margin-top: 15px;
+    height: 38px;
+}
+
+.jkBanner .bannerStatus .haveLogin{
+    display: inline-block;
+    width: 120px;
+    height: 38px;
+    background: url("../img/havelogin_1d29673.png") no-repeat center;
+    background-size: 120px 30px;
+}
+.jkBanner .bannerStatus .haveLogin:hover{
+    background: url("../img/haveloginhover_e5aa155.png") no-repeat center;
+    background-size: 120px 30px;
+}
+/*banner�ϰ벿��*/
+.jkBanner .bannerCard{
+    width: 1000px;
+    height: 240px;
+    margin: 0 auto;
+    position: relative;
+    top: 36px;
+}
+.jkBanner .bannerCard>div{
+    float: left;
+    width: 320px;
+    height: 240px;
+    background: #fff;
+    margin-right: 20px;
+}
+
+.jkBanner .bannerCard>div .cardInfo>span{
+    font-size: 18px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: #333;
+}
+.jkBanner .bannerCard>div .cardInfo>p{
+    border-top: 1px solid #eee;
+    height: 80px;
+    padding: 10px 17px;
+    text-align: left;
+    font-size: 13px;
+    color: #444;
+    line-height: 21px;
+    overflow: hidden;
+}
+
+/*顶部卡片信息*/
+.jkBanner .bannerCard>div .cardInfo{
+    height: 131px;
+    background: #f9f9f9;
+}
+/*职业学院*/
+.jkBanner .bannerCard>div .collageClass{
+    padding: 17px 10px;
+    height: 110px;
+}
+.jkBanner .bannerCard>div:last-child{
+    margin-right: 0;
+}
+
+.jkBanner .bannerCard>div .collageClass ul li{
+    float: left;
+    height: 100%;
+    width: 25%;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    list-style: none;
+}
+.jkBanner .bannerCard>div .collageClass ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.jkBanner .bannerCard>div .collageClass ul li div{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+}
+.jkBanner .bannerCard>div .collageClass ul li span{
+    display: block;
+    margin-top: 7px;
+    color: #666;
+}
+
+.jkBanner .bannerCard>div .collageClass ul li .webCard{
+    background: url("../img/cardhtml5_c4de6b8.jpg") no-repeat center;
+    background-size: 26px 35px;
+}
+.jkBanner .bannerCard>div .collageClass ul li .pythonCard{
+    background: url("../img/cardpython_46dafa5.png") no-repeat center;
+    background-size: 26px 35px;
+}
+.jkBanner .bannerCard>div .collageClass ul li .goCard{
+    background: url("../img/cardgo_f7d5603.png") no-repeat center;
+    background-size: 26px 35px;
+}
+.jkBanner .bannerCard>div .collageClass ul li .iosCard{
+    background: url("../img/cardios_1b210b7.jpg") no-repeat center;
+    background-size: 26px 35px;
+}
+
+/*专业课程*/
+.jkBanner .bannerCard > div .libraryClass{
+    padding: 17px 10px;
+    height: 110px;
+}
+
+.jkBanner .bannerCard > div .libraryClass li{
+    float: left;
+    height: 100%;
+    width: 50%;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+.jkBanner .bannerCard > div .libraryClass li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.jkBanner .bannerCard > div .libraryClass li div{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 57px;
+    font-size: 13px;
+    color: #444;
+    padding-top: 35px;
+}
+
+.jkBanner .bannerCard > div .libraryClass li span{
+    display: block;
+    color: #666;
+}
+
+.jkBanner .bannerCard > div .libraryClass li .videoCard{
+    background: url("../img/cardvideo_744765b.jpg") no-repeat top center;
+    background-size: 30px 30px;
+}
+.jkBanner .bannerCard > div .libraryClass li .wikiCard{
+    background: url("../img/cardwiki_5eaea4b.jpg") no-repeat top center;
+    background-size: 30px 30px;
+}
+/*极客社区*/
+.jkBanner .bannerCard>div .communityClass{
+    padding: 17px 10px;
+    height: 110px;
+}
+.jkBanner .bannerCard>div .communityClass li{
+    float: left;
+    height: 100%;
+    width: 33.33%;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.jkBanner .bannerCard>div .communityClass li div{
+    display: inline-block;
+    width: 100%;
+    height: 57px;
+    font-size: 13px;
+    color: #444;
+    padding-top: 35px;
+    box-sizing: border-box;
+}
+.jkBanner .bannerCard>div .communityClass li span{
+    display: block;
+}
+
+.jkBanner .bannerCard>div .communityClass li .xueCard{
+    background: url("../img/cardxue_99b0a45.jpg") no-repeat top center;
+    background-size: 33px 28px;
+}
+.jkBanner .bannerCard>div .communityClass li .jiaoCard{
+    background: url("../img/cardjiao_d70bff6.jpg") no-repeat top center;
+    background-size: 33px 28px;
+}
+.jkBanner .bannerCard>div .communityClass li .buCard{
+    background: url("../img/cardbu_1d16287.jpg") no-repeat top center;
+    background-size: 33px 28px;
+}
+
+
+/*就业学习*/
+.jkJiuye{
+    box-sizing: border-box;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 140px;
+    height: 330px;
+    position: relative;
+}
+
+.jkJiuye ul{
+    height: 100%;
+    width: 100%;
+}
+.jkJiuye ul li{
+    float: left;
+    margin-right: 14px;
+    background: #fff;
+}
+.jkJiuye ul>li:nth-child(2),
+.jkJiuye ul>li:nth-child(3){
+    width: 371px;
+    height: 180px;
+    margin-bottom: 14px;
+}
+.jkJiuye ul .h2Container{
+    padding-top: 10px;
+    width: 230px;
+    height: 330px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.jkJiuye ul li:last-child,
+.jkJiuye ul>li:nth-child(3){
+    margin-right: 0;
+}
+
+.jkJiuye ul>li:nth-child(4),
+.jkJiuye ul>li:nth-child(5),
+.jkJiuye ul>li:nth-child(6){
+    width: 243px;
+    height: 135px;
+}
+.jkJiuye ul>li:last-child{
+    width: 242px;
+}
+section .h2Container h2{
+    font-size: 19px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 15px;
+    border-left: 2px solid #35b558;
+}
+section .h2Container .h2text{
+    font-size: 14px;
+    color: #333;
+    padding-left: 17px;
+    margin-top: 5px;
+    height: 20px;
+    line-height: 20px;
+}
+section .h2Container .h2img{
+    text-align: center;
+    height: 155px;
+}
+section .h2Container .h2img img{
+    margin-top: 38px;
+    width: 120px;
+    height: 88px;
+}
+section .h2Container>span{
+    margin-left: 17px;
+    margin-bottom: 5px;
+    display: block;
+    width: 62px;
+    height: 18px;
+    line-height: 16px;
+    font-size: 12px;
+    color: gray;
+    border: 1px solid #eee;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+section .h2Container>span:before{
+    content: '';
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: #35b558 url("../img/h2icon_a96e146.png") no-repeat center;
+    background-size: 15px 14px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    margin-right: 4px;
+}
+section .h2Container>p{
+    font-size: 12px;
+    color: #666;
+    line-height: 22px;
+    padding-left: 17px;
+}
+
+.jkJiuye ul>li img{
+    width: 100%;
+    height: 100%;
+}
+
+/*课程库*/
+.jkSku,
+.jkBase{
+    box-sizing: border-box;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 330px;
+    position: relative;
+}
+.jkBase ul .h2Container{
+    padding-top: 10px;
+    width: 230px;
+    height: 330px;
+    background: #fff;
+}
+.jkBase ul > li{
+    float: left;
+    margin-right: 14px;
+    background: #fff;
+    width: 243px;
+    height: 158px;
+}
+.jkBase ul>li img{
+    width: 100%;
+    height: 100%;
+}
+
+.jkBase ul>li:nth-child(2),
+.jkBase ul>li:nth-child(3),
+.jkBase ul>li:nth-child(4){
+    margin-bottom: 14px;
+}
+.jkBase ul>li:nth-child(4),
+.jkBase ul>li:last-child{
+    width: 242px;
+    margin-right: 0;
+}
+/*ר�����*/
+.jkSku ul>li{
+    float: left;
+    margin-right: 14px;
+    background: #fff;
+    width: 371px;
+    height: 158px;
+}
+
+.jkSku ul .h2Container{
+    padding-top: 10px;
+    width: 230px;
+    height: 330px;
+    background: #fff;
+}
+
+.jkSku ul>li img{
+    width: 100%;
+    height: 100%;
+}
+.jkSku ul>li:nth-child(2),
+.jkSku ul>li:nth-child(3){
+    margin-bottom: 15px;
+}
+.jkSku ul>li:nth-child(3),
+.jkSku ul>li:last-child{
+    margin-right: 0;
+}
+
+
+/*我是技术大咖*/
+.jkDk{
+    box-sizing: border-box;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 150px;
+    position: relative;
+}
+.jkDk ul{
+    height: 100%;
+    width: 100%;
+}
+
+.jkDk ul .h2Container{
+    padding-top: 10px;
+    width: 230px;
+    height: 158px;
+    background: #fff;
+}
+.jkDk ul .h2Container .h2img{
+    height: 88px;
+}
+
+.jkDk ul .h2Container .h2img img{
+    margin-top: 17px;
+    width: 105px;
+    height: 72px;
+}
+
+.jkDk ul>li{
+    float: left;
+    margin-right: 14px;
+    background: #fff;
+    width: 371px;
+    height: 158px;
+}
+
+.jkDk ul>li a{
+    display: block;
+    height: 100%;
+}
+
+.jkDk ul>li img{
+    width: 100%;
+    height: 100%;
+}
+
+.jkDk ul>li:last-child{
+    margin-right: 0;
+}
+
+/*我们都是小白*/
+
+.jkBai{
+    box-sizing: border-box;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 150px;
+    position: relative;
+}
+
+.jkBai ul{
+    height: 100%;
+    width: 100%;
+}
+
+.jkBai ul .h2Container{
+    padding-top: 10px;
+    width: 230px;
+    height: 158px;
+    background: #fff;
+}
+.jkBai ul .h2Container .h2img{
+    height: 88px;
+}
+.jkBai ul .h2Container .h2img img{
+    margin-top: 17px;
+    width: 95px;
+    height: 72px;
+}
+
+.jkBai ul>li{
+    float: left;
+    margin-right: 14px;
+    background: #fff;
+    width: 243px;
+    height: 158px;
+    text-align: center;
+}
+
+.jkBai ul>li a{
+    display: block;
+    height: 100%;
+}
+
+.jkBai ul>li .baiImg{
+    display: block;
+    height: 55px;
+    margin-top: 30px;
+}
+
+.jkBai ul>li:nth-child(2) img{
+    width: 41px;
+    height: 55px;
+}
+.jkBai ul>li:nth-child(3) img{
+    width: 55px;
+    height: 48px;
+}
+.jkBai ul>li:nth-child(4) img{
+    width: 55px;
+    height: 55px;
+}
+.jkBai ul>li span{
+    display: block;
+    font-size: 18px;
+    color: #333;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.jkBai ul>li:last-child{
+    margin-right: 0;
+    width: 242px;
+}
+.jkBai ul>li p{
+    font-size: 12px;
+    height: 16px;
+    color: #666;
+    line-height: 16px;
+    margin-top: 5px;
+}
+
+/*让每个人接触更好的教育*/
+.jkOrganization{
+    box-sizing: border-box;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 158px;
+    position: relative;
+}
+.jkOrganization ul{
+    height: 100%;
+    width: 100%;
+}
+.jkOrganization ul li{
+    float: left;
+    margin-right: 14px;
+    background: #fff;
+    width: 243px;
+    height: 158px;
+    text-align: center;
+}
+.jkOrganization ul .h2Container{
+    padding-top: 10px;
+    width: 230px;
+    height: 158px;
+    background: #fff;
+    text-align: left;
+}
+
+.jkOrganization ul .h2Container h2{
+    border-left: 2px solid #ad3a37;
+}
+section .h2Container .h2text{
+    font-size: 14px;
+    color: #333;
+    padding-left: 17px;
+    margin-top: 5px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.jkOrganization ul>li:last-child{
+    margin-right: 0;
+    width: 242px;
+}
+.jkOrganization ul>li:nth-child(2) img,
+.jkOrganization ul>li:nth-child(3) img,
+.jkOrganization ul>li:last-child img{
+    width: 55px;
+    height: 48px;
+}
+
+.jkOrganization ul>li .baiImg{
+    display: block;
+    height: 55px;
+    margin-top: 30px;
+}
+.jkOrganization ul>li span{
+    display: block;
+    font-size: 18px;
+    color: #333;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.jkOrganization ul>li p{
+    font-size: 12px;
+    color: #666;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 5px;
+}
+/*他们的故事*/
+.jkStudent{
+    box-sizing: border-box;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 500px;
+    position: relative;
+}
+
+.jkStudent ul{
+    height: 100%;
+    width: 100%;
+}
+
+.jkStudent>ul .h2Container{
+    text-align: left;
+    padding-top: 10px;
+    width: 230px;
+    height: 500px;
+    background: #fff;
+}
+
+.jkStudent>ul .h2Container>ul{
+    padding-left: 15px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.jkStudent>ul .h2Container>ul>li{
+    float: left;
+    width: 56px;
+    height: 56px;
+    background: #ccc;
+    margin-right: 14px;
+}
+
+.jkStudent>ul .h2Container>ul>li a{
+    display: block;
+    height: 100%;
+}
+
+.jkStudent>ul .h2Container>ul>li a img{
+    width: 100%;
+    height: 100%;
+}
+.jkStudent>ul .h2Container>ul>li:nth-child(n+4){
+    margin-top: 14px;
+}
+
+.jkStudent>ul>li{
+    float: left;
+    margin-right: 14px;
+    background: #fff;
+    width: 243px;
+    height: 243px;
+    text-align: center;
+    padding-top: 30px;
+}
+.jkStudent>ul>li a{
+    display: block;
+    height: 100%;
+}
+
+.jkStudent>ul>li .s_pic{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+
+.jkStudent>ul>li .s_name{
+    display: block;
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.jkStudent>ul>li .s_job{
+    font-size: 12px;
+    color: gray;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 10px;
+}
+
+.jkStudent>ul>li .s_status{
+    font-size: 12px;
+    color: gray;
+    height: 16px;
+    margin-top: 35px;
+}
+
+.jkStudent>ul>li .s_comp{
+    margin-top: 5px;
+    height: 20px;
+}
+
+.jkStudent>ul>li:nth-child(4),
+.jkStudent>ul>li:last-child{
+    width: 242px;
+    margin-right: 0;
+}
+.jkStudent>ul>li:nth-child(n+5){
+    margin-top: 14px;
+}
+
+/*页面脚部*/
+#footer{
+    min-width: 1000px;
+    border: 1px solid #e4e4e4;
+    background: #fff;
+}
+
+.mar-t50{
+    margin-top: 50px;
+}
+#footer div,
+#footer p,
+#footer dd,
+#footer dl,
+#footer dt{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+#footer .jkinfor-block{
+    background: #fff;
+}
+#footer .jkinfor-block .jkinfor{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f5f5f5;
+    padding-left: 224px;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+#footer .jkinfor-block .jkinfor .jk-logo{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    display: inline-block;
+    width: 160px;
+}
+#footer .jkinfor-block .jkinfor .jk-logo img{
+    width: 109px;
+    height: 40px;
+    display: block;
+}
+#footer .jkinfor-block .jkinfor .jk-logo p{
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+}
+#footer .jkinfor dl{
+    width: 135px;
+    color: #808080;
+    float: left;
+}
+#footer .jkinfor dl dd,
+#footer .jkinfor dl dt{
+    font-size: 12px;
+    line-height: 30px;
+}
+
+#footer .jkinfor dl dd a{
+    color: #999;
+}
+#footer .jk-down .hot-tel{
+    color: #808080;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+#footer .jk-down .downCon{
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 30px;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    line-height: 30px;
+    color: #808080;
+    font-size: 13px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+#footer .jk-down .down-ios{
+    background: url("../img/icon-down-ios.png") no-repeat 0 0;
+    background-size: 30px 30px;
+}
+#footer .jk-down .down-and{
+    background: url("../img/icon-down-and.png") no-repeat 0 0;
+    background-size: 30px 30px;
+}
+#footer .jk-down .downCon:hover img{
+    display: block;
+}
+#footer .jk-down .downCon img{
+    display: inline-block;
+    width: 115px;
+    height: 153px;
+    position: absolute;
+    top: -157px;
+    left: 12px;
+    z-index: 2;
+    display: none;
+}
+
+.w-1000{
+    clear: both;
+}
+#footer .copyright{
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#footer .copyright a{
+    color: #999;
+}
+#footer .copyright a:hover{
+    color: #35B558;
+}
+#footer .copyright strong{
+    font-weight: 400;
+}
+#footer .copyright a.down-wechat{
+    float: right;
+    height: 15px;
+    width: 20px;
+    background: url("../img/icon-down-wechat.png") no-repeat 0 0;
+    background-size: 18px 15px;
+}
+
+#footer .copyright a.down-sina{
+    float: right;
+    height: 15px;
+    width: 20px;
+    margin-right: 10px;
+    background: url("../img/icon-down-sina.png") no-repeat 0 0;
+    background-size: 20px 15px;
+}
+#footer .jkinfor a:hover{
+    color: #35B558;
+}
+/*侧边浮动提示框*/
+.gotop{
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 50px;
+    width: 34px;
+    text-align: center;
+    z-index: 2000;
+}
+.gotop span.top{
+    background: url("../img/gotop.jpg") 0 0 no-repeat;
+    background-size: 34px 103px;
+    width: 34px;
+    height: 34px;
+}
+.gotop span{
+    cursor: pointer;
+}
+.gotop span.jk-app{
+    position: relative;
+    display: block;
+    background: #f7f7f7 url("../img/phone-1.png") center center no-repeat;
+    background-size: 12px 24px;
+    width: 34px;
+    height: 35px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.appewm{
+    background: url("../img/appewm.png") center center no-repeat;
+    background-size: 100%;
+    width: 126px;
+    height: 159px;
+    position: absolute;
+    z-index: 2100;
+    left: -126px;
+    top: -70px;
+    display: none;
+}
+.gotop span.jk-app:hover .appewm{
+    display: block;
+}
+.gotop a.qq-online1{
+    position: relative;
+    display: block;
+    background: #f7f7f7 url("../img/kfu1.png") center center no-repeat;
+    width: 34px;
+    height: 35px;
+    border-top: 1px solid #e0e0e0;
+}
+.gotop a.qq-online .kefu{
+    position: absolute;
+    padding: 5px;
+    background: #f7f7f7;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    width: 180px;
+    left: -190px;
+    display: none;
+    box-sizing: border-box;
+}
+.gotop a.qq-online .kefu i{
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 10px solid #f7f7f7;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    right: -10px;
+    top: 12px;
+}
+.gotop a.qq-online1:hover .kefu{
+    display: block;
+}
+
+
+section>ul>li:nth-child(n+2):hover {
+    boedr: 1px solid #ccc;
+    box-shadow: 0 2px 6px #ccc;
+    transition: box-shadow .5s;
+    -moz-transition: box-shadow .5s;
+    -webkit-transition: box-shadow .5s;
+    -o-transition: box-shadow .5s
+}
+
+.jkBanner .bannerCard>div .collageClass ul li:hover div{
+    border: 1px solid #FFC66D;
+}

@@ -1,0 +1,15 @@
+body, h1, h2, h3, p, div, ol, ul, input, button{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'icons';
+    src: url(../font/iconfont_433b92ce.eot);
+    src: url(../font/iconfont_433b92ce.eot#iefix) format('embedded-opentype'),
+    url(../font/iconfont_3b2e9d52.woff) format('woff'),
+    url(../font/iconfont_fe2cc41b.ttf) format('truetype'),
+    url(https://gss0.bdstatic.com/5bd1bjqh_Q23odCf/static/wiseindex/iconfont/iconfont_89356350.svg#iconfont) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

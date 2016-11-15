@@ -1,0 +1,23 @@
+button,
+h1, h2, h3, h4, h5, h6,
+input,
+select,
+textarea {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+a, dd, div, dl, i, img, input, li, p, span, ul {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.cf {
+    zoom: 1;
+}
+address, cite, dfn, em, i, var {
+    font-style: normal;
+}
+img, input, label, select {
+    vertical-align: middle;
+}

@@ -1,0 +1,58 @@
+div.content,div.baidu-mobile,div.baidu-nuomi,
+div.qcodeimg,div.text,div.content ul li{
+    display: inline-block;
+    _zoom:1;
+    _display:inline;
+}
+
+input.search-box{
+    height: 25px\9;/*针对IE8的hack*/
+    margin-top: 7px\9;
+}
+
+/*图片搜索图标在IE6中被隐藏了*/
+span.photo{
+    display: none;
+}
+input.baiduClick{
+    height: 39px;
+}
+
+div.head-list a.more-product {
+    margin-left: 19px;
+    margin-right: 12px;
+}
+/*min-hegiht无效的hack*/
+div.more-product-box{
+    height:auto!important;
+    height:950px;
+    min-height:950px;
+}
+
+span.settings a.simple{
+    margin-right: 19px;
+}
+span.settings{
+    vertical-align: top;
+    margin-top: -1px;
+}
+div.head-list a.more-product{
+    margin-left: 0;
+    position: relative;
+    top: -5px;
+    _zoom:1;
+}
+div.head-list div.hover-box a{
+    vertical-align: middle;
+}
+
+div.settings-hover a:hover{
+    _zoom: 1;
+}
+div.settings-hover{
+    right: 70px;
+}
+
+input.baiduClickHover{
+    background: #3385ff;
+}
