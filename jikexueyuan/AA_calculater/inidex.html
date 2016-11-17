@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link type="text/css"  rel="stylesheet" href="css/reset.css">
+    <link type="text/css"  rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+
+            <div class="row">
+                <span>总付款</span>
+                <input type="number" id="all" placeholder="实际付款" value="191">
+            </div>
+
+            <div class="row">
+                <span>优惠</span>
+                <input type="number" id="hui" value="200">
+            </div>
+
+            <div class="row">
+                <span>小王</span>
+                <input type="number" id="wang" value="115">
+                <span class="re" id="reWang"></span>
+            </div>
+            <div class="row">
+                <span>班长</span>
+                <input type="number" id="ban" value="112">
+                <span class="re" id="reBan"></span>
+            </div>
+            <div class="row">
+                <span>我</span>
+                <input type="number" id="me" value="60">
+                <span class="re" id="reMe"></span>
+            </div>
+            <button id="count" type="submit">计算</button><span>合计<span id="heji"></span></span>
+
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+
+        function conut(){
+
+            var all = parseInt($("#all").val());
+            var hui = parseInt($("#hui").val());
+
+            var wang = parseInt($("#wang").val());
+            var ban  = parseInt($("#ban").val());
+            var me   = parseInt($("#me").val());
+            var money = all + hui;
+
+            var average = parseFloat((money - wang - ban - me) / 3).toFixed(2);
+
+            wang = (wang/money)*all;
+            ban  = (ban/money)*all;
+            me   = (me/money)*all;
+            average = (average/money)*all;
+
+
+            wang = parseFloat(wang + average).toFixed(2);
+            ban  = parseFloat(ban + average).toFixed(2);
+            me   = parseFloat(me + average).toFixed(2);
+            var heji = parseInt(wang) + parseInt(ban)+parseInt(me);
+            $("#reWang").text(wang);
+            $("#reBan").text(ban);
+            $("#reMe").text(me);
+
+
+            $("#heji").text(heji);
+        }
+
+        $("#count").click(function(){
+            conut();
+        });
+
+    });
+</script>
+</html>

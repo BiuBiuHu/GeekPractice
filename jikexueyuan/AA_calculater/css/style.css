@@ -1,0 +1,20 @@
+div.container{
+    width: 300px;
+    margin: 0 auto;
+}
+
+div.row span{
+    display: inline-block;
+    width: 100px;
+}
+
+div.row span.re{
+    width: 50px;
+    font-weight: bold;
+}
+div.row:first-child{
+    margin-top: 10px;
+}
+div.row{
+    margin-bottom: 10px;
+}
