@@ -29,7 +29,7 @@
 		   然后动态计算出图片的绝对位置，填充图片。
 ## Angular  
 学习Angular相关技术
-1. 	学习简单的Demo
-2.	学习Ctroller的使用
-3.  学习$scope的使用
-4.  学习service，以及自定义service服务
+1. 学习简单的Demo
+2. 学习Ctroller的使用
+3. 学习$scope的使用
+4. 学习service，以及自定义service服务
