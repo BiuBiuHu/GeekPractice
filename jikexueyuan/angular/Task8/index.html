@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS进阶</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/myCtrl.js"></script>
+</head>
+<body style="padding:10px" ng-app="app">
+	<p>service学习  --- ng-repeat的使用</p>
+	<div ng-controller = "addCtrl">
+		<h2>地址管理</h2>
+		<ul class="ui-list ui-list-link ui-list-text ui-list-active ui-border-tb">
+			<li ng-repeat = "item in list" class="ui-border-t" ng-if = "$first" >
+				<h4>{{$index + 1 + item.address + $first +" "+ $last}}</h4>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

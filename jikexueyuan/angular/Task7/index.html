@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS进阶</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/myCtrl.js"></script>
+	<style type="text/css">
+		.tx{
+			width: 150px;
+			height: 150px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body style="padding:10px" ng-app="app">
+	<p>service学习  --- 常用指令的学习</p>
+	<pre>
+	ng-bing , ng-model , ng-show/hide , ng-ig , ng-submit , ng-disable
+	</pre>
+	<div ng-controller = "userCtrl">
+		<form name="f" ng-submit = "regiest(user)">
+		<fieldset>
+			<legend>基本信息</legend>
+			<img ng-src="{{user.icon}}" ng-if="user.isShowImg" ng-class="{'tx':user.showIcon}">
+			<div>
+				<input type="text" name="username" placeholder="用户名" required>
+				<input type="password" name="psw" placeholder="密码">
+				<span>职位</span>
+				<select>
+					<option value="" ng-selected = "user.zw == ''">--请选择--</option>
+					<option value="1" ng-selected = "user.zw == '1'">前端工程师</option>
+					<option value="1" ng-selected = "user.zw == '2'">JAVA工程师</option>
+				</select>
+				<span>性别</span>
+				<input type="radio" ng-checked="user.sex == 1" name="sex">&nbsp男&nbsp
+				<input type="radio" ng-checked="user.sex == 0" name="sex">&nbsp女&nbsp
+			</div>
+			<fieldset>
+				<legend>爱好</legend>
+				<div>
+					<label><input type="checkbox" ng-checked="isChecked(1)"><span>足球</span></label>
+					<label><input type="checkbox" ng-checked="isChecked(2)"><span>篮球</span></label>
+					<label><input type="checkbox" ng-checked="isChecked(3)"><span>游泳</span></label>
+				</div> 
+			</fieldset>
+			<button class="button expand" ng-disabled = "f.$invalid">提交</button>
+		</fieldset>
+	</form>
+	</div>
+	
+
+</body>
+</html>
